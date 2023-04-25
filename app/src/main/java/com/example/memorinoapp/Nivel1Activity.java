@@ -8,10 +8,14 @@ import android.view.View;
 
 public class Nivel1Activity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel1);
+
+
     }
     //Método para el botón volver
     public void Volver(View view){

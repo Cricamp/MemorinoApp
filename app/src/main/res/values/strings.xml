@@ -5,4 +5,5 @@
     <string name="et_Jugar">¿Jugamos?</string>
     <string name="et_Creadores">Cristian Campo y Pilar Vaquero</string>
     <string name="btn_Volver">Volver</string>
+    <string name="et_Instrucciones">Encuentra las parejas de animales</string>
 </resources>

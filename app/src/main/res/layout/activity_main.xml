@@ -5,78 +5,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/puzzle"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/btn_Jugar"
+        android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="232dp"
         android:backgroundTint="#00FFFFFF"
         android:onClick="Play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/blocks" />
 
-    <TextView
-        android:id="@+id/txv_Resultado"
-        android:layout_width="143dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/txv_Resultado"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/et_Creadores"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/et_Creadores"
-        android:layout_width="381dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:hint="@string/et_Creadores"
-        android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/et_Jugar"
-        android:layout_width="225dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="224dp"
-        android:ems="10"
-        android:hint="@string/et_Jugar"
-        android:inputType="text"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_Jugar" />
-
-    <EditText
-        android:id="@+id/et_Nombre"
+    <Button
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="Registrar"
+        android:text="@string/btnRegistrar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="96dp"
         android:ems="10"
-        android:hint="@string/et_Nombre"
+        android:hint="@string/etNombre"
         android:inputType="text"
         android:textColorHint="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewJugar"
+        android:layout_width="167dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="256dp"
+        android:text="@string/textviewJugar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
+
+    <TextView
+        android:id="@+id/textViewCreadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/textviewCreadores"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PuntuacionFinal"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_PuntuacionFinal"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="92dp"
+        android:hint="@string/tv_PuntuacionFinal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJugar" />
+
+    <ImageView
+        android:id="@+id/ivPortada"
+        android:layout_width="183dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="216dp"
+        android:contentDescription="@string/ivPortada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

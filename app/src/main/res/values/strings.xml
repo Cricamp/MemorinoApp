@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">MemorinoApp</string>
-    <string name="et_Nombre">Escribe tu nombre</string>
-    <string name="txv_Resultado">Puntuación</string>
-    <string name="et_Jugar">¿Jugamos?</string>
-    <string name="et_Creadores">Cristian Campo y Pilar Vaquero</string>
-    <string name="btn_Volver">Volver</string>
-    <string name="et_Instrucciones">Encuentra las parejas de animales</string>
+    <string name="app_name">MemorinApp</string>
+    <string name="etNombre">Introduce tu nombre de jugador</string>
+    <string name="textviewJugar">¿Jugamos?</string>
+    <string name="textviewCreadores">Cristian Campo y Pilar Vaquero</string>
+    <string name="tv_PuntuacionFinal">Nombre más puntuación</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="ivPortada">portada</string>
+    <string name="btn_Salir">Reiniciar</string>
+    <string name="btn_Reiniciar">Volver</string>
 </resources>
